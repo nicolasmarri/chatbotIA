@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { FC } from "react";
 import { ChatHeader } from "./ChatHeader";
+import { ChatInput } from "./ChatInput";
 
 export const Chat: FC = () => {
   return (
@@ -22,7 +23,7 @@ export const Chat: FC = () => {
             </AccordionTrigger>
             <AccordionContent>
               <div className="flex flex-col h-80">
-                Message
+                <ChatInput className="px-4" />
               </div>
             </AccordionContent>
           </div>
